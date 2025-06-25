@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1746979986">
+  <File Type="ROUTE-PWR" Name="MIPSPipeline_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="MIPSPipeline.tcl"/>
+  <File Type="BITSTR-MMI" Name="MIPSPipeline.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="MIPSPipeline_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="MIPSPipeline_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="MIPSPipeline_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="MIPSPipeline_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="MIPSPipeline_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="MIPSPipeline_opt.dcp"/>
+  <File Type="OPT-DRC" Name="MIPSPipeline_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MIPSPipeline.hwdef"/>
+  <File Type="PWROPT-DCP" Name="MIPSPipeline_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="MIPSPipeline_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="MIPSPipeline_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="MIPSPipeline_placed.dcp"/>
+  <File Type="PLACE-IO" Name="MIPSPipeline_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="MIPSPipeline_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="MIPSPipeline_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MIPSPipeline_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="MIPSPipeline_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="MIPSPipeline_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MIPSPipeline_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="MIPSPipeline.bin"/>
+  <File Type="PLACE-TIMING" Name="MIPSPipeline_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MIPSPipeline_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="MIPSPipeline.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="MIPSPipeline_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="MIPSPipeline_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="MIPSPipeline_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="MIPSPipeline.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="MIPSPipeline_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MIPSPipeline_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="MIPSPipeline_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MIPSPipeline_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="MIPSPipeline_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MIPSPipeline_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="MIPSPipeline_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MIPSPipeline_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MIPSPipeline_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MIPSPipeline_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="MIPSPipeline_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="MIPSPipeline_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MIPSPipeline_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MIPSPipeline_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="MIPSPipeline_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MIPSPipeline_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="MIPSPipeline_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="MIPSPipeline_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="MIPSPipeline_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="MIPSPipeline_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MIPSPipeline_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MIPSPipeline_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MIPSPipeline_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MIPSPipeline_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MIPSPipeline_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MIPSPipeline_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="MIPSPipeline_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="MIPSPipeline.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MIPSPipeline_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="MIPSPipeline_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="MIPSPipeline.nky"/>
+  <File Type="BITSTR-BMM" Name="MIPSPipeline_bd.bmm"/>
+  <File Type="PDI-FILE" Name="MIPSPipeline.pdi"/>
+  <File Type="RCFI_FILE" Name="MIPSPipeline.rcfi"/>
+  <File Type="CFI_FILE" Name="MIPSPipeline.cfi"/>
+  <File Type="RNPI_FILE" Name="MIPSPipeline.rnpi"/>
+  <File Type="NPI_FILE" Name="MIPSPipeline.npi"/>
+  <File Type="RBD_FILE" Name="MIPSPipeline.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="MIPSPipeline.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="MIPSPipeline.sysdef"/>
+  <File Type="BG-BGN" Name="MIPSPipeline.bgn"/>
+  <File Type="BG-DRC" Name="MIPSPipeline.drc"/>
+  <File Type="RDI-RDI" Name="MIPSPipeline.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="MIPSPipeline_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="MIPSPipeline_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/EX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ID.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IFetch.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MEM.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MPG.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SSD.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/UC.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MIPSCicluUnic.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lab1.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lab3.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lab3_2.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Lab3_3.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Numarator.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ram_wr_1st.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/reg_file.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MIPSPipeline"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/NexysA7_test_env.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Lab3.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

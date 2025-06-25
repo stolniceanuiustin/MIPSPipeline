@@ -1,0 +1,375 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun May 11 19:13:12 2025
+# Process ID: 2364
+# Current directory: E:/Facultate Sem 2/AC/test_env/test_env.runs/synth_1
+# Command line: vivado.exe -log MIPSPipeline.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPSPipeline.tcl
+# Log file: E:/Facultate Sem 2/AC/test_env/test_env.runs/synth_1/MIPSPipeline.vds
+# Journal file: E:/Facultate Sem 2/AC/test_env/test_env.runs/synth_1\vivado.jou
+# Running On: Iustin-PC, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 14702 MB
+#-----------------------------------------------------------
+source MIPSPipeline.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 378.367 ; gain = 53.805
+Command: read_checkpoint -auto_incremental -incremental {E:/Facultate Sem 2/AC/test_env/test_env.srcs/utils_1/imports/synth_1/Lab3.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/Facultate Sem 2/AC/test_env/test_env.srcs/utils_1/imports/synth_1/Lab3.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MIPSPipeline -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 19860
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1205.383 ; gain = 407.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPSPipeline' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:48]
+WARNING: [Synth 8-614] signal 'en' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:251]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/Facultate Sem 2/AC/test_env/MPG.vhd:14' bound to instance 'MPG_portmap' of component 'MPG' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:300]
+INFO: [Synth 8-638] synthesizing module 'MPG' [E:/Facultate Sem 2/AC/test_env/MPG.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [E:/Facultate Sem 2/AC/test_env/MPG.vhd:20]
+INFO: [Synth 8-3491] module 'IFetch' declared at 'E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/IFetch.vhd:5' bound to instance 'IFetch_portmap' of component 'IFetch' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:302]
+INFO: [Synth 8-638] synthesizing module 'IFetch' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/IFetch.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'IFetch' (0#1) [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/IFetch.vhd:19]
+INFO: [Synth 8-3491] module 'UC' declared at 'E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/UC.vhd:3' bound to instance 'UC_portmap' of component 'UC' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:314]
+INFO: [Synth 8-638] synthesizing module 'UC' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/UC.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'UC' (0#1) [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/UC.vhd:18]
+INFO: [Synth 8-3491] module 'ID' declared at 'E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/ID.vhd:5' bound to instance 'ID_portmap' of component 'ID' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:327]
+INFO: [Synth 8-638] synthesizing module 'ID' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/ID.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'ID' (0#1) [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/ID.vhd:23]
+INFO: [Synth 8-3491] module 'EX' declared at 'E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/EX.vhd:5' bound to instance 'EX_portmap' of component 'EX' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:341]
+INFO: [Synth 8-638] synthesizing module 'EX' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/EX.vhd:24]
+INFO: [Synth 8-226] default block is never used [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/EX.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'EX' (0#1) [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/EX.vhd:24]
+INFO: [Synth 8-3491] module 'MEM' declared at 'E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MEM.vhd:7' bound to instance 'MEM_portmap' of component 'MEM' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:357]
+INFO: [Synth 8-638] synthesizing module 'MEM' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MEM.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (0#1) [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MEM.vhd:17]
+INFO: [Synth 8-226] default block is never used [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:369]
+WARNING: [Synth 8-614] signal 'Instruction_IF_ID' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:367]
+WARNING: [Synth 8-614] signal 'PCp4_IF_ID' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:367]
+WARNING: [Synth 8-614] signal 'RD1_ID_EX' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:367]
+WARNING: [Synth 8-614] signal 'RD2_ID_EX' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:367]
+WARNING: [Synth 8-614] signal 'Ext_Imm_id_ex' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:367]
+WARNING: [Synth 8-614] signal 'alu_res_ex_mem' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:367]
+WARNING: [Synth 8-614] signal 'mem_data_mem_wb' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:367]
+WARNING: [Synth 8-614] signal 'wd_aux' is read in the process but is not in the sensitivity list [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:367]
+INFO: [Synth 8-3491] module 'SSD' declared at 'E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/SSD.vhd:6' bound to instance 'SSD_portmap' of component 'SSD' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:381]
+INFO: [Synth 8-638] synthesizing module 'SSD' [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/SSD.vhd:15]
+INFO: [Synth 8-226] default block is never used [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/SSD.vhd:33]
+INFO: [Synth 8-226] default block is never used [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/SSD.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/SSD.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'MIPSPipeline' (0#1) [E:/Facultate Sem 2/AC/test_env/test_env.srcs/sources_1/new/MIPSCicluUnic.vhd:48]
+WARNING: [Synth 8-7129] Port led[15] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module MIPSPipeline is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1299.629 ; gain = 502.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1299.629 ; gain = 502.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1299.629 ; gain = 502.141
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1299.629 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Facultate Sem 2/AC/test_env/NexysA7_test_env.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [E:/Facultate Sem 2/AC/test_env/NexysA7_test_env.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/Facultate Sem 2/AC/test_env/NexysA7_test_env.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/Facultate Sem 2/AC/test_env/NexysA7_test_env.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Facultate Sem 2/AC/test_env/NexysA7_test_env.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPSPipeline_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPSPipeline_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1350.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1350.398 ; gain = 0.000
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [E:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint E:/Facultate Sem 2/AC/test_env/test_env.srcs/utils_1/imports/synth_1/Lab3.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 47    
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	  33 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 31    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port led[15] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module MIPSPipeline is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module MIPSPipeline is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MIPSPipeline | MEM_portmap/MEM_reg | 64 x 32(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
++-------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:36 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|MIPSPipeline | MEM_portmap/MEM_reg | 64 x 32(NO_CHANGE)     | W | R |                        |   |   | Port A           | 1      | 0      | 
++-------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    34|
+|3     |LUT1     |     4|
+|4     |LUT2     |    42|
+|5     |LUT3     |    44|
+|6     |LUT4     |    16|
+|7     |LUT5     |   158|
+|8     |LUT6     |   200|
+|9     |MUXF7    |    96|
+|10    |MUXF8    |    15|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |    32|
+|13    |FDRE     |   639|
+|14    |FDSE     |     8|
+|15    |IBUF     |     6|
+|16    |OBUF     |    27|
+|17    |OBUFT    |     4|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 1350.398 ; gain = 552.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1350.398 ; gain = 502.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 1350.398 ; gain = 552.910
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1350.398 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 146 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1351.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 40f03bd3
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 49 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 1351.152 ; gain = 947.938
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'E:/Facultate Sem 2/AC/test_env/test_env.runs/synth_1/MIPSPipeline.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MIPSPipeline_utilization_synth.rpt -pb MIPSPipeline_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 11 19:14:13 2025...

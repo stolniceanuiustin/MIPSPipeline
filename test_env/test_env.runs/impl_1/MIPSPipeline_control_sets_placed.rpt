@@ -1,0 +1,93 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun May 11 19:15:10 2025
+| Host         : Iustin-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MIPSPipeline_control_sets_placed.rpt
+| Design       : MIPSPipeline
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    40 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             105 |           44 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               8 |            5 |
+| Yes          | No                    | No                     |             543 |          169 |
+| Yes          | No                    | Yes                    |              32 |           14 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------+-------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |      Enable Signal      |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------+-------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                         | SSD_portmap/an_aux[7]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                         | SSD_portmap/sel0[0]           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | MPG_portmap/eqOp        |                               |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                         | SSD_portmap/sel0[2]           |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG |                         | SSD_portmap/sel0[1]           |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | MPG_portmap/E[0]        | btn_IBUF[1]                   |               14 |             32 |         2.29 |
+| ~clk_IBUF_BUFG | MPG_portmap/Q2_reg_0[0] |                               |                9 |             32 |         3.56 |
+| ~clk_IBUF_BUFG | MPG_portmap/Q2_reg_1[0] |                               |               16 |             32 |         2.00 |
+| ~clk_IBUF_BUFG | MPG_portmap/Q2_reg_4[0] |                               |               12 |             32 |         2.67 |
+| ~clk_IBUF_BUFG | MPG_portmap/Q2_reg_3[0] |                               |               12 |             32 |         2.67 |
+| ~clk_IBUF_BUFG | MPG_portmap/Q2_reg_5[0] |                               |               12 |             32 |         2.67 |
+| ~clk_IBUF_BUFG | MPG_portmap/Q2_reg_6[0] |                               |               13 |             32 |         2.46 |
+| ~clk_IBUF_BUFG | MPG_portmap/Q2_reg_2[0] |                               |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG |                         |                               |               44 |            105 |         2.39 |
+|  clk_IBUF_BUFG | MPG_portmap/E[0]        |                               |               82 |            318 |         3.88 |
++----------------+-------------------------+-------------------------------+------------------+----------------+--------------+
+
+
